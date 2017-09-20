@@ -1,13 +1,13 @@
 package booking.com;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 //https://www.careercup.com/question?id=4535655694598144
 public class CreateHistogram {
 	static void createHistogram(String words[], int n) {
 		int maxCount = 0;
-		HashMap<Character, Integer> map = new HashMap<>();
+		TreeMap<Character, Integer> map = new TreeMap<>();
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < words[i].length(); j++) {
 				String word = words[i].toLowerCase();
